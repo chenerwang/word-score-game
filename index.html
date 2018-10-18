@@ -4,17 +4,27 @@
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" charset="UTF-8" href="css/word-scord-game.css">
 	<title>Word Score Game</title>
+	<style>
+	button{
+	  height:35px;
+	  background-color:#c1c1c1;
+	  border:solid 1px #dee3f3;
+	  color:#495879;
+	  border-radius:6px;
+	}
+	</style>
 </head>
+
 <body>
 	<div id="layout">
-	<header><h1>Word score game</h1></header>
-	<div id="score-box"><p><strong>Score:&nbsp;</strong><span id="score-number">0</span></p></div>
+	<div style="background-color:#7C93AE;color:#d5bbc4;text-align:center;font-size: 45px;height:70px;">Word score game</div>
+	<div style="border: solid 10px #d5bbc4;border-radius:6px;background-color:#d5bbc4;text-align:center;height:720px;">
+	
+	<div id="score-box" style="color:#7C93AE;font-size:25px;" ><p><strong>Score:&nbsp;</strong><span id="score-number">0</span></p></div>
 	<br />
 	<div id="remaining-letters-key">
 	</div>
-	
-	
-	<div id="letters-you-have-box">
+	<div id="letters-you-have-box" style="margin-left:24%;height:200px;">
 		<table>
 		<tr>
 		<td><div class="tile-piece tile-piece-1"> <p class="letter" id="letter-1"></p><p class="point" id="points-1"></p></div></td>
@@ -27,18 +37,18 @@
 		</tr>
 		</table>
 	</div>
-	<button id="find-word-button">Run your code to find a word</button>
-	<br />
-	<br />
-	<input type="text" id="human-word-input" />
+	<button id="find-word-button" >Run your code to find a word</button>
+	<div style="height:30px;">
+	</div>
+	<input type="text" id="human-word-input" style="height:35px;width:250px;border-radius:6px;" placeholder="input a word to find"/>
 	<button id="human-find-word-button">Human Find a word</button>
-	<br />
-	<br />
+	<div style="height:30px;">
+	</div>
 	<button id="retire-hand-button">Retire the hand</button>
 	</div>
-	<ul id="word-history-list">
+	<ul id="word-history-list" style="color:#7C93AE;">
 	</ul>
-
+    </div>
 	<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="lib/wordList.min.js"></script>
 	<script type="text/javascript" src="lib/wordBank.min.js"></script>
